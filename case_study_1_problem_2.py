@@ -31,9 +31,9 @@ def top_retweeted(json_tweet_data):
 
     # finds indices of top 10 retweet counts
     top10indices = sorted(range(len(retweet_counts)), key = lambda i: retweet_counts[i])[-10:]
-    
+    top10indices.reverse()
     # prints table of top 10 tweets and their retweet counts
-    print("\033[4mCount\tTop Tweets\033[0m\n")
+    print("\033[4mCount\tTop Tweets\033[0m")
     for index in top10indices:
         print(str(json_tweet_data[index]['retweet_count']) + "\t\"" + json_tweet_data[index]['text'] + "\"")
     print("\n")
