@@ -79,7 +79,7 @@ def json_export(invar,filename):
 
 def main():
     twitter_api=oauth()
-    search=['crypto','bitcoin','ripple','XRP']
+    search=['bitcoin','XRP','etherium','litecoin','namecoin']
     result=[]
     for i in search:
             result+=twitter_search(i,1000,twitter_api)
