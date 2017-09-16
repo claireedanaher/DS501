@@ -40,7 +40,6 @@ def top10retweeted(json_tweet_data):
 
     # finds indices of top 10 retweet counts, ordered from most to least
     top10indices = sorted(range(len(retweet_counts)), key = lambda i: retweet_counts[i])[:-11:-1]
-    print(top10indices)
     
     # prints table of top 10 tweets and their retweet counts
     print("\033[4mCount\tTop Tweets\033[0m\n")
