@@ -80,7 +80,7 @@ def top10hashtags_user_mentions(json_tweet_data):
     
 def main():
     # converts .txt file into json structure
-    file = "results_090917.txt"
+    file = "allresults.txt"
     with open(file) as raw_data:
         parsed_data = json.load(raw_data)
 
