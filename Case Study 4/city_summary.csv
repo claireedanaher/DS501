@@ -1,0 +1,9 @@
+code,state,category,ranking_value,City,Top Genre,Tags
+IL,Illinois,state,1351,Chicago, house,"['house', 'techno', 'tech', 'remix', 'deep', 'music', 'edm', 'dj', 'electronic', 'bass']"
+MA,Massachussetts,state,2042,Boston, hip-hop & rap,"['hop', 'rap', 'hip', 'hip hop', 'soul', 'hip hop rap', 'hop rap', 'dope', 'music', 'boston']"
+FL,Florida,state,1364,Miami, trance,"['trance', 'progressive', 'uplifting', 'uplifting trance', 'house', 'progressive house', 'pulsar', 'space', 'trance progressive', 'odyssey']"
+TX,Texas,state,854,Houston, hip-hop & rap,"['rap', 'deen', 'remix', 'pop', 'bass', 'hop', 'soundcloud', 'music', 'hip', 'hip hop']"
+TN,Tennessee,state,333,Nashville, trap,"['rock', 'hip', 'music', 'hip hop', 'hop', 'rap', 'bass', 'instrumental', 'trap', 'new']"
+CO,Colorado,state,1179,Denver, hip-hop & rap,"['trap', 'rap', 'hop', 'hip', 'hip hop', 'music', 'rhymesick', 'bass', 'hiphop', 'fade']"
+CA,California,state,1577,Los Angeles, house,"['house', 'techno', 'pop', 'remix', 'tech', 'tech house', 'electronic', 'dance', 'trap', 'music']"
+NY,New York,state,3174,New York City, house,"['house', 'deep', 'deep house', 'music', 'remix', 'rap', 'hop', 'trap', 'electronic', 'hip']"
