@@ -14,10 +14,11 @@ df = pd.read_csv('soundcloud_test.csv')
 for col in df.columns:
     df[col] = df[col].astype(str)
 
-scl = [[0.0, 'rgb(255,180,0)'],[0.2, 'rgb(255,165,0)'],[0.4, 'rgb(255,150,0)'],\
-            [0.6, 'rgb(255,135,0)'],[0.8, 'rgb(255,110,0)'],[1.0, 'rgb(255,100,0)']]
 
-df['text'] = df['state'] + '<br>' + 'Top City: ' +df['City'] + '<br> ' + 'Number of Listeners: ' + df['total Hits']
+scl = [[0.0, 'rgb(255,237,221)'],[0.2, 'rgb(255,174,104)'],[0.4, 'rgb(255,162,81)'],\
+            [0.6, 'rgb(255,157,71)'],[0.8, 'rgb(255,139,38)'],[1.0, 'rgb(255,119,0)']]
+
+df['text'] = df['state'] + '<br>' + 'Top City: ' +df['City'] + '<br>' + 'Top Genre:  ' + df['Top Genre'] + '<br>' + 'Tags: ' + df['Tags']
 
 data = [ dict(
         type='choropleth',
