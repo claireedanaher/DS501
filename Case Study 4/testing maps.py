@@ -1,15 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Dec  3 17:02:19 2017
-
-@author: Jonny
-"""
-
 import plotly
-import plotly.plotly as py
 import pandas as pd
 
-df = pd.read_csv('soundcloud_test.csv')
+df = pd.read_csv('city_summary.csv')
 
 for col in df.columns:
     df[col] = df[col].astype(str)
@@ -17,6 +9,8 @@ for col in df.columns:
 
 scl = [[0.0, 'rgb(255,237,221)'],[0.2, 'rgb(255,174,104)'],[0.4, 'rgb(255,162,81)'],\
             [0.6, 'rgb(255,157,71)'],[0.8, 'rgb(255,139,38)'],[1.0, 'rgb(255,119,0)']]
+
+
 
 df['text'] = df['state'] + '<br>' + 'Top City: ' +df['City'] + '<br>' + 'Top Genre:  ' + df['Top Genre'] + '<br>' + 'Tags: ' + df['Tags']
 
@@ -34,11 +28,11 @@ data = [ dict(
                 width = 2
             ) ),
         colorbar = dict(
-            title = "Listeners")
+            title = "Ranking Value")
         ) ]
 
 layout = dict(
-        title = '2017 Aggregated Soundcloud Listeners by State<br>(Hover for breakdown)',
+        title = '2017 Aggregated Soundcloud Listening Data by State<br>(Hover for breakdown)',
         geo = dict(
             scope='usa',
             projection=dict( type='albers usa' ),
